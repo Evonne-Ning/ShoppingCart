@@ -1,6 +1,6 @@
 class User:
-    def __init__(self, name, birthday, level, phone, address):
-        self.name = name
+    def __init__(self, username, birthday, level, phone, address):
+        self.name = username
         self.birthday = birthday
         self.level = level
         self.phone = phone
@@ -22,7 +22,7 @@ class User:
 
         while 2:
             search_user = input("請輸入會員名稱：")
-            # username 為自定義內容；username.name 指的是 User.會員名稱
+            # username 為自定義內容；username.name 指的是 User.self.name
             user_name_list = list(filter(lambda username: username.name == search_user, user_list))
             if len(user_name_list) > 0:
                 user_name_list[0].user_drive()
