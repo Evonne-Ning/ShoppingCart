@@ -7,7 +7,7 @@ class User:
         self.address = address
 
     def user_drive(self):
-        print(f"會員名稱：{self.name} \n"
+        print("\n" + f"會員名稱：{self.name} \n"
               f"生日：{self.birthday} \n"
               f"會員等級：{self.level} \n"
               f"手機號碼：{self.phone} \n"
@@ -27,8 +27,8 @@ class User:
             if len(user_name_list) > 0:
                 user_name_list[0].user_drive()
             else:
-                print("查無此會員")
-            check = input("是否繼續查詢用戶資料？(Y/N)")
+                print("\n"+"查無此會員！")
+            check = input("\n"+"是否繼續查詢用戶資料？(Y/N)")
             if check == "Y":
                 continue
             else:
